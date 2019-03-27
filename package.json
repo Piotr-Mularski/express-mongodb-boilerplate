@@ -1,0 +1,15 @@
+{
+ "name": "express-mongo-boilerplate",
+ "version": "1.0.0",
+ "description": "Boilerplate for projects that use express and MongoDB.",
+ "main": "./app/server.js",
+ "scripts": {
+  "start": "nodemon ./app/server.js"
+ },
+ "author": "Piotr Mularski",
+ "license": "GPL-3.0-only",
+ "dependencies": {
+  "express": "^4.16.4",
+  "nodemon": "^1.18.10"
+ }
+}
