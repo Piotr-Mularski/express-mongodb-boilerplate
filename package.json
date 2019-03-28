@@ -9,7 +9,9 @@
  "author": "Piotr Mularski",
  "license": "GPL-3.0-only",
  "dependencies": {
+  "dotenv": "^7.0.0",
   "express": "^4.16.4",
+  "mongoose": "^5.4.20",
   "nodemon": "^1.18.10"
  }
 }
