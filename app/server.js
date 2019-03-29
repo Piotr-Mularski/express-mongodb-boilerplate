@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const path = require('path');
+const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const router = require('./routes/router');
 
@@ -10,6 +11,8 @@ dotenv.config();
 
 app.set('views', `${process.cwd()}/app/views/`);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // make mongoose use ES6 Promises
 mongoose.Promise = global.Promise;
