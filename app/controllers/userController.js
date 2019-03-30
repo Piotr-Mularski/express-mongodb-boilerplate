@@ -10,5 +10,5 @@ exports.addUser = async (req, res) => {
 	} catch (err) {
 		console.error('Cannot save the user', err);
 		res.status(400).redirect('/');
-	};
+	}
 };
